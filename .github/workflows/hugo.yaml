@@ -74,7 +74,7 @@ jobs:
     needs: build
     steps:
       - name: Configure CNAME
-        run: echo "azizsoule.me" > ./public/CNAME
+        run: ls
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
