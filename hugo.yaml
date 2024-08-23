@@ -8,7 +8,7 @@ enableEmoji: true
 # Languages configuration
 languages:
   en:
-    languageName: "Switch to English"
+    languageName: ""
     weight: 1
     menu:
       main:
@@ -24,9 +24,13 @@ languages:
           url: /projects
           name: 🛠️ Projects
           weight: 3
+        - identifier: search
+          url: /search
+          name: 🔍 Search
+          weight: 4
 
   fr:
-    languageName: "Passer en français"
+    languageName: "AZAZ"
     weight: 2
     menu:
       main:
@@ -42,6 +46,10 @@ languages:
           url: /projects
           name: 🛠️ Projets
           weight: 3
+        - identifier: search
+          url: /search
+          name: 🔍 Rechercher
+          weight: 4
 
 params:
   # Environment
@@ -49,6 +57,9 @@ params:
 
   # Light or dark theme : light, dark, auto (auto for system preference)
   defaultTheme: auto
+
+  # For open graph cover image
+  images: [ "images/me.jpeg" ]
 
   # For home page with only text
   homeInfoParams:
