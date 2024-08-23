@@ -1,96 +1,80 @@
 baseURL: "https://www.azizsoule.me"
-title: "Aziz's Website"
-paginate: 5
+languageCode: "en"
 theme: PaperMod
 
-enableRobotsTXT: true
-buildDrafts: false
-buildFuture: false
-buildExpired: false
+# Enable emoji shortcodes. Ex: :smile:
+enableEmoji: true
 
-minify:
-  disableXML: true
-  minifyOutput: true
+# Languages configuration
+languages:
+  en:
+    languageName: "Switch to English"
+    weight: 1
+    menu:
+      main:
+        - identifier: about
+          url: /
+          name: 🤹🏾‍♂️ About
+          weight: 1
+        - identifier: writings
+          url: /writings
+          name: 📝 Writings
+          weight: 2
+        - identifier: projects
+          url: /projects
+          name: 🛠️ Projects
+          weight: 3
+
+  fr:
+    languageName: "Passer en français"
+    weight: 2
+    menu:
+      main:
+        - identifier: about
+          url: /
+          name: 🤹🏾‍♂️ À propos
+          weight: 1
+        - identifier: writings
+          url: /writings
+          name: 📝 Écrits
+          weight: 2
+        - identifier: projects
+          url: /projects
+          name: 🛠️ Projets
+          weight: 3
 
 params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: "Aziz's Website"
-  description: "Hi! Welcome to my website 😁. This place is where I share my thoughts and experiences. I hope you find my writings helpful and informative. Feel free to reach out to me if you have any questions or feedback. Happy reading! 😊"
-  keywords: [Blog, Portfolio, PaperMod]
-  author: Aziz Soulé
-  images: ["<link or path of image for opengraph, twitter-cards>"]
-  DateFormat: "January 2, 2006"
+  # Environment
+  env: production
+
+  # Light or dark theme : light, dark, auto (auto for system preference)
   defaultTheme: auto
-  disableThemeToggle: false
 
-  ShowReadingTime: true
-  ShowShareButtons: true
-  ShowPostNavLinks: true
-  ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
-  ShowWordCount: true
-  ShowRssButtonInSectionTermList: true
-  UseHugoToc: true
-  disableSpecial1stPost: false
-  disableScrollToTop: false
-  comments: false
-  hidemeta: false
-  hideSummary: false
-  showtoc: false
-  tocopen: false
-
-  assets:
-    # disableHLJS: true # to disable highlight.js
-    # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
-
-  label:
-    text: "Home"
-    icon: /apple-touch-icon.png
-    iconHeight: 35
-
-  # profile-mode
-  profileMode:
-    enabled: false # needs to be explicitly set
-    title: Aziz Soulé
-    subtitle: "Welcome to my website. My name is Aziz Soulé. I am a software engineer. I don't yet know what am gonna talk about here, but I am pretty sure that will be a great journey. I am passionate about learning new things and would like to start sharing my knowledge with others. I hope you find my writings helpful and informative. Feel free to reach out to me if you have any questions or feedback. Happy reading! 😊"
-    imageUrl: "<img location>"
-    imageWidth: 120
-    imageHeight: 120
-    imageTitle: my image
-    buttons:
-      - name: Posts
-        url: posts
-      - name: Tags
-        url: tags
-
-  # home-info mode
+  # For home page with only text
   homeInfoParams:
-    Title: "Hi there 👋"
-    Content: Welcome to my website. My name is Aziz Soulé. I am a software engineer. I don't yet know what am gonna talk about here, but I am pretty sure that will be a great journey. I am passionate about learning new things and and would like to start sharing my knowledge with others. I hope you find my writings helpful and informative. Feel free to reach out to me if you have any questions or feedback. Happy reading! 😊
+    Title: Hi there wave
+    Content: Can be Info, links, about...
 
+  # For profile home page with image
+  profileMode:
+    enabled: false
+    title: "Aziz Soulé"
+    imageUrl: "/images/me.jpeg"
+    imageTitle: "Aziz Soulé - Picture credit: Aniéla Carly"
+    buttons:
+      - name: Resume
+        url: "/resume.pdf"
+      - name: Github
+        url: "/contact"
+
+  # For social networks
   socialIcons:
     - name: linkedin
-      url: "https://linkedin.com/in/azizsoule"
+      url: https://www.linkedin.com/in/azizsoule
     - name: github
-      url: "https://github.com/azizsoule"
+      url: https://www.github.com/azizsoule
 
-  cover:
-    hidden: true # hide everywhere but not in structured data
-    hiddenInList: true # hide on list pages and home
-    hiddenInSingle: true # hide on single page
-
-  editPost:
-    URL: "https://github.com/azizsoule/website/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
-
-  # for search
-  # https://fusejs.io/api/options.html
+  # For search
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
@@ -98,31 +82,11 @@ params:
     distance: 1000
     threshold: 0.4
     minMatchCharLength: 0
-    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
-    keys: ["title", "permalink", "summary", "content"]
+    # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: [ "title", "permalink", "summary", "content", "tags", "description" ]
 
-menu:
-  main:
-    - identifier: writings
-      name: Writings
-      url: /writings/
-      weight: 10
-    - identifier: tags
-      name: Tags
-      url: /tags/
-      weight: 20
-    - identifier: about
-      name: About
-      url: /about/
-      weight: 80
-
-pygmentsUseClasses: true
-
-markup:
-  highlight:
-    noClasses: false
-    # anchorLineNos: true
-    # codeFences: true
-    # guessSyntax: true
-    # lineNos: true
-    # style: monokai
+# Search engine
+outputs:
+  - HTML
+  - RSS
+  - JSON
