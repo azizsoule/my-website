@@ -14,7 +14,7 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
+  title: "Coder's District ✨"
   description: "ExampleSite description"
   keywords: [Blog, Portfolio, PaperMod]
   author: Aziz Soulé
