@@ -15,7 +15,7 @@ minify:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: "Aziz's Website"
-  description: "Hi! Welcome to Aziz's website 😁. This place is where I share my thoughts and experiences. I hope you find my writings helpful and informative. Feel free to reach out to me if you have any questions or feedback. Happy reading! 😊"
+  description: "Hi! Welcome to my website 😁. This place is where I share my thoughts and experiences. I hope you find my writings helpful and informative. Feel free to reach out to me if you have any questions or feedback. Happy reading! 😊"
   keywords: [Blog, Portfolio, PaperMod]
   author: Aziz Soulé
   images: ["<link or path of image for opengraph, twitter-cards>"]
