@@ -1,5 +1,5 @@
-baseURL: "https://examplesite.com/"
-title: ExampleSite
+baseURL: "https://azizsoule.com"
+title: "Coder's District ✨"
 paginate: 5
 theme: PaperMod
 
@@ -7,8 +7,6 @@ enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
-
-googleAnalytics: UA-123-45
 
 minify:
   disableXML: true
@@ -22,7 +20,7 @@ params:
   author: Aziz Soulé
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
-  defaultTheme: auto # dark, light
+  defaultTheme: auto
   disableThemeToggle: false
 
   ShowReadingTime: true
@@ -58,8 +56,8 @@ params:
   # profile-mode
   profileMode:
     enabled: false # needs to be explicitly set
-    title: ExampleSite
-    subtitle: "This is subtitle"
+    title: Aziz Soulé
+    subtitle: "Welcome to my website. My name is Aziz Soulé. I am a software engineer. I don't yet know what am gonna talk about here, but I am pretty sure that will be a great journey. I am passionate about learning new things and would like to start sharing my knowledge with others. I hope you find my writings helpful and informative. Feel free to reach out to me if you have any questions or feedback. Happy reading! 😊"
     imageUrl: "<img location>"
     imageWidth: 120
     imageHeight: 120
@@ -72,24 +70,14 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+    Title: "Hi there 👋"
+    Content: Welcome to my website. My name is Aziz Soulé. I am a software engineer. I don't yet know what am gonna talk about here, but I am pretty sure that will be a great journey. I am passionate about learning new things and and would like to start sharing my knowledge with others. I hope you find my writings helpful and informative. Feel free to reach out to me if you have any questions or feedback. Happy reading! 😊
 
   socialIcons:
-    - name: x
-      url: "https://x.com/"
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
+    - name: linkedin
+      url: "https://linkedin.com/in/azizsoule"
     - name: github
-      url: "https://github.com/"
-
-  analytics:
-    google:
-      SiteVerificationTag: "XYZabc"
-    bing:
-      SiteVerificationTag: "XYZabc"
-    yandex:
-      SiteVerificationTag: "XYZabc"
+      url: "https://github.com/azizsoule"
 
   cover:
     hidden: true # hide everywhere but not in structured data
@@ -97,7 +85,7 @@ params:
     hiddenInSingle: true # hide on single page
 
   editPost:
-    URL: "https://github.com/<path_to_repo>/content"
+    URL: "https://github.com/azizsoule/my-website/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
@@ -112,22 +100,24 @@ params:
     minMatchCharLength: 0
     limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
     keys: ["title", "permalink", "summary", "content"]
+
 menu:
   main:
-    - identifier: categories
-      name: categories
-      url: /categories/
+    - identifier: writings
+      name: Writings
+      url: /writings/
       weight: 10
     - identifier: tags
-      name: tags
+      name: Tags
       url: /tags/
       weight: 20
-    - identifier: example
-      name: example.org
-      url: https://example.org
-      weight: 30
-# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 80
+
 pygmentsUseClasses: true
+
 markup:
   highlight:
     noClasses: false
