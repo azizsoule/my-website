@@ -1,5 +1,5 @@
 baseURL: "https://azizsoule.com"
-title: "Coder's District ✨"
+title: "Aziz's Website ✨"
 paginate: 5
 theme: PaperMod
 
@@ -14,7 +14,7 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: "Coder's District ✨"
+  title: "Aziz's Website ✨"
   description: "ExampleSite description"
   keywords: [Blog, Portfolio, PaperMod]
   author: Aziz Soulé
