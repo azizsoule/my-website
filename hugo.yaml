@@ -8,7 +8,8 @@ enableEmoji: true
 # Languages configuration
 languages:
   en:
-    languageName: ""
+    languageCode: "en"
+    languageName: "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
     weight: 1
     menu:
       main:
@@ -30,7 +31,8 @@ languages:
           weight: 4
 
   fr:
-    languageName: "AZAZ"
+    languageCode: "fr"
+    languageName: "🇫🇷"
     weight: 2
     menu:
       main:
