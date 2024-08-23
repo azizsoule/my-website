@@ -1,0 +1,12 @@
+services:
+  website:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /website
+    ports:
+      - "80:8080"
+    volumes:
+      - .:/website
+    entrypoint: ["git", "submodule", "add", "--depth=1", "https://github.com/adityatelange/hugo-PaperMod.git", "themes/PaperMod"]
+    #entrypoint: hugo server --bind 0.0.0.0 --port 8080
