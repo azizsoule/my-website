@@ -65,6 +65,7 @@ params:
 
   # For home page with only text
   homeInfoParams:
+    enabled: false
     Title: Hi there wave
     Content: Can be Info, links, about...
 
