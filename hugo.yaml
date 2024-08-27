@@ -60,8 +60,15 @@ params:
   # Light or dark theme : light, dark, auto (auto for system preference)
   defaultTheme: auto
 
+  # Allow to display images in full size
+  cover:
+    linkFullImages: true
+
   # For open graph cover image
   images: [ "images/me.jpeg" ]
+
+  # To display the breadcrumb (Ex: home > section > page)
+  showBreadCrumbs: true
 
   # For home page with only text
   homeInfoParams:
