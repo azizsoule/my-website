@@ -1,8 +1,10 @@
 ---
 layout: single
-cover:
-  image: "images/me.jpeg"
+#cover:
+#  image: "images/me.jpeg"
 hideMeta: true
+ShowBreadCrumbs: false
+hideSummary: true
 ---
 
 # Welcome to the Hugo Academic Template Demo!
