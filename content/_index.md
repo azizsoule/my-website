@@ -1,5 +1,8 @@
 ---
 layout: single
+cover:
+  image: "images/me.jpeg"
+hideMeta: true
 ---
 
 # Welcome to the Hugo Academic Template Demo!
