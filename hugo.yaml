@@ -1,6 +1,7 @@
 baseURL: "https://www.azizsoule.me"
 languageCode: "en"
 theme: PaperMod
+title: azizsoule.me
 
 # Enable emoji shortcodes. Ex: :smile:
 enableEmoji: true
