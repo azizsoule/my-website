@@ -1,7 +1,5 @@
 ---
 layout: single
-#cover:
-#  image: "images/me.jpeg"
 hideMeta: true
 ShowBreadCrumbs: false
 hideSummary: true
